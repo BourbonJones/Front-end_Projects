@@ -1,4 +1,4 @@
 #Alguns códigos HTML/CSS
 
-Algumas páginas criadas de pequenos projetos propostos pelo FreeCodeCamp:
-[Páginas](https://codepen.io/Bourbon_Jones)
+Some pages created from small projects proposed by FreeCodeCamp:
+[Exercise Pages](https://codepen.io/Bourbon_Jones)
