@@ -1,0 +1,94 @@
+<style>
+#title, #description{
+  text-align: center;
+  color: White;
+  font-weight: 1000;
+}
+
+#survey-form{
+  background-color: rgba(25, 25, 112, 0.5);
+  text-align: left;
+  width: 65%;
+  margin: auto;
+  color: white;
+  border: 5px rgba(25, 25, 112, 0.1) solid;
+  border-radius: 10px;
+  font-weight: 1000;
+}
+
+#name, #email, #number, #dropdown{
+  width: 30%;
+  padding: 5px 10px;
+  color: #495057;
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 7px;
+}
+
+.forms{
+  margin-left: 25px;
+}
+</style>
+<html>
+  <body BACKGROUND="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEBvTN_pZHkhy5918nERYEetBvpRnqcRwQAA&usqp=CAU">
+    <h1 id="title"> Coding </h1>
+    <p id="description"> Thanks for answer our survey. We have the objective to know what programming languages are or continue being most popular today... Lets Go</p>
+
+    <form id="survey-form">
+      <div class="forms">
+        <div><br><br>
+          <div>
+            <label for "name" id="name-label">Name<br></label>
+            <input id="name" type="text" placeholder="Name" required>
+          </div>
+          <div>
+            <label for "email" id="email-label"><br>Email<br></label>
+            <input id="email" type="email" placeholder="Email" required>
+          </div>
+          <div>
+            <label for "number" id="number-label"><br>Age<br></lable>
+            <input id="number" type="number" min="0" max="100" placeholder="Age" required>
+           </div>
+        </div>
+
+        <!-- Especificação Nº14: atribuir values -->
+       
+        <div>
+          <p>how did you arrive at this survey?</p>
+          <select id="dropdown">
+            <option >Programming sites</option>
+            <option >Some content creator</option>
+            <option >Teacher</option>
+            <option >Coworker</option>
+            <option >Friend</option>
+          </select>
+        </div>
+        <div>
+          <p>How much time do you spend programing per day?</p>
+          <input type="radio" name="optionR" value="30-"> 30min or less </input><br>
+          <input type="radio" name="optionR" value="1-"> 1h or less</input><br>
+          <input type="radio" name="optionR" value="1-3"> between 1h and 3h</input><br>
+          <input type="radio" name="optionR" value="3-5"> between 3h and 5h</input><br>
+          <input type="radio" name="optionR" value="5+"> more then 5h</input><br>
+        </div> 
+        <div>
+          <p>which of these programming languages do you usually work/study?</p>
+            <input type="checkbox" name="lenguages" value="Hmlt/Css/Js"> Hmlt/Css/Js</input><br>
+            <input type="checkbox" name="lenguages" value="Python"> Python</input><br>
+            <input type="checkbox" name="lenguages" value="C/C++/c#"> C/C++/c#</input><br>
+            <input type="checkbox" name="lenguages" value="Java"> Java</input><br>
+            <input type="checkbox" name="lenguages" value="PHP"> PHP</input><br>
+            <input type="checkbox" name="lenguages" value="Kotlin"> Kotlin</input><br>
+            <input type="checkbox" name="lenguages" value="Swift"> Swift</input><br>
+            <input type="checkbox" name="lenguages" value="Go"> Go</input><br>
+            <input type="checkbox" name="lenguages" value="Others"> Others</input><br>
+        </div> 
+        <div>
+          <p>If you program in other languages, mention them here:</p>
+          <textarea> Type here</textarea><br>
+          <button type="submit" id="submit"> Submit </button>
+        </div>
+    </div>
+   </form>    
+  </body>
+ </html>
